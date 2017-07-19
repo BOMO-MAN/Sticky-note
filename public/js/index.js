@@ -919,7 +919,7 @@ Note.prototype = {
     this.$note = $(tpl);
     this.$note.find('.note-ct').html(this.opts.context);
     this.opts.$ct.append(this.$note);
-    if(!this.id)  this.$note.css({'left':'30px','top':'100px'});  //新增放到右边
+    if(!this.id)  this.$note.css({'top':'200px'});  //新增放到右边
   },
 
   setStyle: function () {
