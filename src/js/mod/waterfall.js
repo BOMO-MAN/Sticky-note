@@ -1,59 +1,3 @@
-// var WaterFall = (function(){
-
-// 	var $ct;
-// 	var $items;
-
-// 	function render($c){
-// 		$ct = $c;
-// 		$items = $ct.children();
-
-// 		var nodeWidth = $items.outerWidth(true),
-// 				colNum = parseInt($(window).width()/nodeWidth),
-// 				colSumHeight = [];
-
-// 		for( var i = 0; i<colNum; i++ ){
-// 			colSumHeight.push(0);
-// 		}
-
-// 		$items.each(function(){
-// 			var $cur = $(this);
-
-// 			var index = 0,
-// 					minSunHeight = colSumHeight[0];
-
-// 			for(var i=0; i<colSumHeight.length; i++){
-// 				if(colSumHeight[i] < minSunHeight){
-// 					index = 1;
-// 					minSunHeight = colSumHeight[i];
-// 				}
-// 			}
-
-// 			$cur.css({
-// 				left: nodeWidth*index,
-// 				top: minSunHeight
-// 			});
-
-// 			colSumHeight[index] = $cur.outerHeight(true) + colSumHeight[index];
-
-// 		})
-
-// 	}
-
-// 	$(window).on('resize',function(){
-// 		render($ct)
-// 	})
-
-
-// 	return {
-// 		init: render
-// 	}
-
-
-
-// })();
-
-// module.export =WaterFall;
-
 
 var WaterFall = (function(){
   var $ct;
@@ -106,3 +50,4 @@ var WaterFall = (function(){
 })();
 
 module.exports = WaterFall
+

@@ -1,6 +1,3 @@
-var Toast = require('../mod/toast.js').Toast;
-
-
 require('less/index.less');
 
 var NoteManager = require('mod/note-manager.js').NoteManager;
@@ -16,4 +13,3 @@ $('.add-note').on('click', function() {
 Event.on('waterfall', function(){
   WaterFall.init($('#content'));
 })
-Toast('hello world');

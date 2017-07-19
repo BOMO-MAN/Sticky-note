@@ -1,8 +1,6 @@
-
 var webpack = require('webpack')
 var path = require('path')
-// var ExtractTextPlugin = require('extract-text-webpack-plugin')
-// var autoprefixer = require('autoprefixer')
+
 
 module.exports = {
     entry: path.join(__dirname, "js/app/index.js"),
@@ -13,7 +11,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.less$/,
-            use: ["style-loader", "css-loader", "less-loader"]
+            use: ["style-loader","css-loader","less-loader"]
         }]
     },
     resolve: {
@@ -35,13 +33,13 @@ module.exports = {
     //             ]
     //         }
     //     })
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false,
-        //     },
-        //     output: {
-        //         comments: false,
-        //     },
-        // }),
+    //     new webpack.optimize.UglifyJsPlugin({
+    //         compress: {
+    //             warnings: false,
+    //         },
+    //         output: {
+    //             comments: false,
+    //         },
+    //     }),
     ]
 };
